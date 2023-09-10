@@ -19,4 +19,25 @@
   h1 {
     @apply my-4 mx-0 text-4xl;
   }
+
+  .nav-links {
+    @apply w-screen top-20 left-[48px] bg-orange-300 hidden m-0 md:block md:static md:w-auto md:bg-none md:ml-20;
+  }
+
+  .nav-links a {
+    @apply block text-center py-[10px] px-0 text-xl font-bold uppercase md:inline-block md:py-[15px] md:px-[20px];
+  }
+
+  .expanded {
+    @apply [display:unset];
+  
+  }
+
+  .nav-links a:hover, a:focus {
+    @apply bg-gray-400;
+  }
+
+  .line {
+    @apply block w-5 h-1 mb-2 bg-gray-500;
+  }
 }

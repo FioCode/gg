@@ -1,6 +1,10 @@
 ---
 import './styles/global.css';
 
+import Footer from './components/Footer.astro';
+
+import Header from './components/Header.astro';
+
 const pageTitle = "Обо мне";
 
 const identity = {
@@ -28,8 +32,7 @@ let big = "uppercase" + " text-green-500" + " font-bold";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-        <a href="/">Главная</a>
-        <a href="/about/">Обо мне</a>
+       <Header />
 
 		<h1>Мой сайт Astro</h1>
         <h1>{pageTitle}</h1>
@@ -57,5 +60,7 @@ let big = "uppercase" + " text-green-500" + " font-bold";
         {finished && <p>Я закончил этот урок!</p>}
 
         {goal === 3 ? <p>Моя цель — закончить за 3 дня.</p> : <p>Моя цель — не 3 дня.</p>}
+
+        <Footer />
 	</body>
 </html>
