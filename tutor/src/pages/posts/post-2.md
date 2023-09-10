@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/MarkdownPostLayout.astro
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Мой второй пост в блоге'
 author: 'Ученик Astro'
 description: "После того, как я изучил немного Astro, я не мог остановиться!"
