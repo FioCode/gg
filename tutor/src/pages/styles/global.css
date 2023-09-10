@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base { 
+
+  html {
+    @apply font-sans bg-slate-100;
+  }
+  
+  body {
+    @apply my-0 mx-auto w-screen max-w-2xl p-4 leading-6;
+  }
+  
+  * {
+    @apply box-border;
+  }
+  
+  h1 {
+    @apply my-4 mx-0 text-4xl;
+  }
+}
