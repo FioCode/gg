@@ -1,6 +1,7 @@
 ---
-title: Мой третий пост в блоге
-author: Ученик Astro
+layout: ../layouts/MarkdownPostLayout.astro
+title: 'Мой третий пост в блоге'
+author: 'Ученик Astro'
 description: "У меня были некоторые трудности, но помощь сообщества была бесценной!"
 image:
     url: "https://docs.astro.build/assets/rays.webp"

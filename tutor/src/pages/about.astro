@@ -1,11 +1,6 @@
 ---
-import './styles/global.css';
-
-import Footer from './components/Footer.astro';
-
-import Header from './components/Header.astro';
-
-const pageTitle = "Обо мне";
+import BaseLayout from './layouts/BaseLayout.astro';
+const pageTitle = "Главная";
 
 const identity = {
   firstName: "Николай",
@@ -22,20 +17,9 @@ const goal = 3;
 
 let big = "uppercase" + " text-green-500" + " font-bold";
 ---
+<BaseLayout pageTitle={pageTitle}>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-       <Header />
-
-		<h1>Мой сайт Astro</h1>
-        <h1>{pageTitle}</h1>
+	<h1>Мой сайт Astro</h1>
 
         <h2>… и моём новом сайт на Astro!</h2>
 
@@ -61,6 +45,4 @@ let big = "uppercase" + " text-green-500" + " font-bold";
 
         {goal === 3 ? <p>Моя цель — закончить за 3 дня.</p> : <p>Моя цель — не 3 дня.</p>}
 
-        <Footer />
-	</body>
-</html>
+</BaseLayout>
